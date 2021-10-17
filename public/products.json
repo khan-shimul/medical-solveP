@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "type": "Vitamin",
+      "name": "HealthKart Multivitamin",
+      "price": 29.99,
+      "rating": 4.7,
+      "description": "The primary role of a multivitamin is to fill nutritional gaps and make sure people get their daily allowance of underconsumed nutrients like vitamins A, C, D, E and K, calcium, magnesium, dietary fiber, choline and potassium, Wong said.",
+      "img": "https://i.ibb.co/Hg4NHWX/1.jpg"
+    },
+    {
+      "id": 2,
+      "type": "Vitamin",
+      "name": "CitraNatal DHA",
+      "price": 24.99,
+      "rating": 4.1,
+      "description": "CitraNatal ® DHA is a prescription prenatal/postnatal multi-vitamin/mineral tablet with Ferr-Ease ®, a patented dual-iron delivery comprising both a quick release and slow release iron, and a soft gel of an essential fatty acid. The prenatal vitamin is a white, scored, oval multi-vitamin/mineral tablet.",
+      "img": "https://i.ibb.co/7S022fS/2.jpg"
+    },
+    {
+      "id": 3,
+      "type": "Vitamin",
+      "name": "Glutofac-MX",
+      "price": 29.99,
+      "rating": 4.7,
+      "description": "This medication is best taken on an empty stomach 1 hour before or 2 hours after meals. Take with a full glass of water (8 ounces or 240 milliliters) unless your doctor directs you otherwise. If stomach upset occurs, you may take this medication with food.",
+      "img": "https://i.ibb.co/58yb4fr/Visualize-your-ideas-on-this-great-mockup-of-a-clear-pill-bottle-Outstanding-quality-Fairly-simple-t.jpg"
+    },
+    {
+      "id": 4,
+      "type": "Vitamin",
+      "name": "L-Methylfolate",
+      "price": 23.99,
+      "rating": 4.4,
+      "description": "It is used to help growth and good health. L-methylfolate is a medical food for use in people who have conditions related to folate deficiency. L-methylfolate is also used in people with major depressive disorder who have folate deficiency, or in people with schizophrenia who have hyperhomocysteinemia related to folate deficiency.",
+      "img": "https://i.ibb.co/sqxm9Vh/4.jpg"
+    },
+    {
+      "id": 5,
+      "type": "Instrument",
+      "name": "Thermometer",
+      "price": 999.99,
+      "rating": 4.8,
+      "description": "A thermometer is a tool that measures temperature — how hot or cold something is. ... Made up of thermo (heat) and meter (measuring device), the meaning of the word thermometer is pretty straightforward. Thermometers measure temperatures in degrees, according to either the Celsius or Fahrenheit system.",
+      "img": "https://i.ibb.co/XJqzGXR/1.jpg"
+    },
+    {
+      "id": 6,
+      "type": "Device",
+      "name": "Pressure Machine",
+      "price": 449.99,
+      "rating": 3.8,
+      "description": "A sphygmomanometer is a device that measures blood pressure. It is composes of an inflatable rubber cuff, which is wrapped around the arm. ... When the cuffs pressure equals the arterial systolic pressure, blood begins to flow past the cuff, creating blood flow turbulence and audible sounds.",
+      "img": "https://i.ibb.co/cthg2nY/2.jpg"
+    },
+    {
+      "id": 7,
+      "type": "Accessories",
+      "name": "Disposable Gloves",
+      "price": 129.99,
+      "rating": 4.2,
+      "description": "Disposable gloves are gloves that you use one time and then throw away. They can protect your health and the health of the person you are caring for. They help keep germs and infection from spreading to you and to the other person.",
+      "img": "https://i.ibb.co/ZHK49cK/3.jpg"
+    },
+    {
+      "id": 8,
+      "type": "Device",
+      "name": "Nebulizer",
+      "price": 399.99,
+      "rating": 4.7,
+      "description": "A nebulizer turns liquid medicine into a mist to help treat your asthma. They come in electric or battery-run versions. They come in both a portable size you can carry with you and a larger size thats meant to sit on a table and plug into a wall.",
+      "img": "https://i.ibb.co/r6NMnBf/4.jpg"
+    }
+  ]
