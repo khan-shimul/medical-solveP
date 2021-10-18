@@ -1,12 +1,20 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import Rating from 'react-rating';
+import { useHistory } from 'react-router';
 import './Product.css';
 
 
 const Product = ({ product }) => {
     // destructure product info
-    const { name, img, description, price, rating } = product;
+    const { id, name, img, description, price, rating } = product;
+
+    const history = useHistory();
+
+    const handleDetails = (id) => {
+        history.push(`/product/${id}`)
+
+    }
 
     return (
         <Col>
@@ -30,7 +38,7 @@ const Product = ({ product }) => {
                             <Card.Text className="price">${price}</Card.Text>
                         </div>
                     </div>
-                    <button className="btn-regular">Details</button>
+                    <button onClick={() => handleDetails(id)} className="btn-regular">Details</button>
                 </Card.Body>
             </Card>
         </Col>
