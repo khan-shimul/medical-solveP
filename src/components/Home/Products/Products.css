@@ -1,0 +1,13 @@
+.products-intro h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+.products-intro p{
+    font-size: 14px;
+}
+.line{
+    height: 2px;
+    width: 50px;
+    background-color: #3DA9CF;
+}
