@@ -4,6 +4,7 @@ import Home from './components/Home/Home/Home';
 import ProductDetail from './components/ProductDetail/ProductDetail';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
+import ShopDone from './components/ShopDone/ShopDone';
 import AuthProvider from './contexts/AuthProvider';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path="/product/:id">
               <ProductDetail />
+            </Route>
+            <Route path="/shopdone">
+              <ShopDone />
             </Route>
           </Switch>
           <Footer />

@@ -1,0 +1,19 @@
+.shopping-banner{
+    background-image: url("../../images/thankyou/thank3.png"),
+    linear-gradient(rgba(9, 27, 37, 0.932), rgba(0, 30, 44, 0.753));
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid red; */
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.shopping-banner h2{
+    font-size: 45px;
+    font-weight: 600;
+}
+.shopping-banner p{
+    font-size: 14px;
+}

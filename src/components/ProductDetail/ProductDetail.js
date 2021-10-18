@@ -1,29 +1,34 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import Rating from 'react-rating';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
+    const [products] = useAuth();
     const { id } = useParams();
 
-    const [products] = useAuth();
-
-    const singleProduct = products?.filter(pd => pd.id == id)
+    const singleProduct = products?.filter(pd => pd.id === parseInt(id))
+    console.log(singleProduct)
 
     const { name, img, price, description, rating, type } = singleProduct[0];
 
+    const history = useHistory();
+    // handle shop click
+    const handleShop = () => {
+        history.push('/shopdone')
+    }
 
     return (
-        <div>
+        <div className="container">
             <h2>Product Details Coming soon for: {id}</h2>
-            <div className="container">
+            <div>
                 <div className="row g-4 product-details">
-                    <div className="col-md-6 border border-1">
+                    <div className="col-12 col-md-6">
                         <img src={img} alt="" />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-12 col-md-6">
                         <h2>{name}</h2>
                         <Rating className="icons"
                             initialRating={rating}
@@ -34,7 +39,7 @@ const ProductDetail = () => {
                         <p>{description}</p>
                         <p>Price: ${price}</p>
                         <p>Type: {type}</p>
-                        <Button variant="danger">Shop Now</Button>
+                        <Button onClick={handleShop} variant="danger">Shop Now</Button>
                     </div>
                 </div>
             </div>
