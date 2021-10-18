@@ -1,13 +1,32 @@
-.meal{
+.product{
     transition: 0.4s;
 }
-.meal:hover{
+.product:hover{
     box-shadow: rgba(100, 100, 111, 0.226) 0px 7px 29px 0px;
     border-radius: 10px;
 }
 
-.food img{
+.product img{
     height: 200px;
     width: 100%;
     object-fit: cover;
+}
+
+.icons{
+    margin-bottom: 15px;
+    color: #fd8636;
+}
+
+.price{
+    font-size: 16px;
+    font-weight: 600;
+    color: #4e4e4e;
+}
+
+.btn-regular{
+    background-color: #4AB0D5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 17px;
 }
