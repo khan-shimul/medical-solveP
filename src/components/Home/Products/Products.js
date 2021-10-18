@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import useAuth from '../../../hooks/useAuth';
+import useProducts from '../../../hooks/useProducts';
 import Product from '../Product/Product';
 import './Products.css';
 
 const Products = () => {
     // use products
-    const [products] = useAuth();
+    const [products] = useProducts();
+    console.log(products)
 
     return (
         <section>

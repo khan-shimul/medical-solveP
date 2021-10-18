@@ -2,17 +2,16 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import Rating from 'react-rating';
 import { useHistory, useParams } from 'react-router';
-import useAuth from '../../hooks/useAuth';
+import useProducts from '../../hooks/useProducts';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
-    const [products] = useAuth();
+    // load data
+    const [products] = useProducts();
     const { id } = useParams();
-
-    const singleProduct = products?.filter(pd => pd.id === parseInt(id))
-    console.log(singleProduct)
-
-    const { name, img, price, description, rating, type } = singleProduct[0];
+    // find product that user clicked
+    const singleProduct = products?.find(pd => pd.id === parseInt(id))
+    const { name, img, price, description, rating, type } = singleProduct || {};
 
     const history = useHistory();
     // handle shop click
