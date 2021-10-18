@@ -1,0 +1,13 @@
+/* .banner {
+    background-image: url('https://image.freepik.com/free-photo/female-doctor-her-office-with-copy-space_23-2148947632.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } */
+
+  .banner img{
+      height: 500px;
+      object-fit: cover;
+  }
