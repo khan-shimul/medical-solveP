@@ -6,3 +6,11 @@
     margin: 10px;
     border-radius: 50%;
 }
+
+.customer-service h5{
+    font-size: 18px;
+}
+.customer-service p{
+    font-size: 14px;
+    color: #8a8a8a;
+}
