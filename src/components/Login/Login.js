@@ -1,10 +1,25 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const { user, signInUsingGoogle } = useAuth();
+    const { user, setIsLoading, signInUsingGoogle } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    // handle redirect
+    const redirect_uri = location.state?.from || "/home";
+
+    const handleSignIn = () => {
+        signInUsingGoogle()
+            .then(result => {
+                console.log(result.user)
+                history.push(redirect_uri)
+            })
+            .finally(() => setIsLoading(false))
+    }
 
     return (
         <section className="login-section">
@@ -30,7 +45,7 @@ const Login = () => {
                     </div>
                     <div className="or-sign-in text-center">
                         <h5>or</h5>
-                        <Button onClick={signInUsingGoogle} className="rounded-3 btn-danger"><i className="fab fa-google"></i> Google Sign In</Button>
+                        <Button onClick={handleSignIn} className="rounded-3 btn-danger"><i className="fab fa-google"></i> Google Sign In</Button>
                     </div>
                 </div>
             </div>
