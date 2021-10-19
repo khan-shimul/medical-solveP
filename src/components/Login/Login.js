@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import './Login.css';
 
 const Login = () => {
     const { setError, setEmail, setPassword, setIsLoading, signInUsingGoogle, auth, email, password, signInWithEmailAndPassword } = useAuth();
