@@ -26,7 +26,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                         <Nav className="me-auto">
                             <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
-                            <Nav.Link href="/home#services">Services</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#services">Products</Nav.Link>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                         </Nav>
                         {
@@ -39,16 +39,10 @@ const Header = () => {
                         }
 
                         {
-                            user?.photoURL ? <span>img</span>
-                                :
-                                <span>icon</span>
-                        }
-                        {
-                            user && <span>{user.displayName}</span>
-                        }
-
-                        {
-                            user && <Button onClick={logOut} variant="danger" className="ms-2">Log Out</Button>
+                            user && <div>
+                                <span><i class="far fa-user"></i> {user?.displayName}</span>
+                                <Button onClick={logOut} variant="danger" className="ms-2">Log Out</Button>
+                            </div>
                         }
                     </Navbar.Collapse>
                 </Container>

@@ -58,14 +58,14 @@ const Login = () => {
                             <Form.Control type="password" placeholder="Password" />
 
                         </Form.Group>
-                        <Button variant="danger" className="w-100" type="submit">
+                        <Button variant="danger" className="w-100 mb-2" type="submit">
                             Sign In
                         </Button>
                     </Form>
                     <div className="text-center">
                         {/* <button onClick={handleResetPassword} className="btn btn-secondary btn-sm">Reset Password</button>
                         <br /> */}
-                        <Link to="/signup" className="primary text-center">New to Red Onion? Create Account</Link>
+                        <Link to="/signup" className="primary text-center text-decoration-none text-secondary">New to Red Onion? <span className="text-primary">Create Account</span></Link>
                     </div>
                     <div className="or-sign-in text-center">
                         <h5>or</h5>

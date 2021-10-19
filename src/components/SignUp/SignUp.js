@@ -1,5 +1,4 @@
-import { onAuthStateChanged } from "firebase/auth";
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -7,7 +6,7 @@ import useAuth from '../../hooks/useAuth';
 import './SignUp.css';
 
 const SignUp = () => {
-    const { user, setUser, setUserName, error, email, password, handleNameChange, auth, setEmail, setPassword, setError, setIsLoading, signInUsingGoogle, createUserWithEmailAndPassword } = useAuth();
+    const { setUserName, error, email, password, handleNameChange, auth, setEmail, setPassword, setError, setIsLoading, signInUsingGoogle, createUserWithEmailAndPassword } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -92,7 +91,7 @@ const SignUp = () => {
                             </Button>
                         </Form>
                         <div className="text-center">
-                            <Link to="/login" className="already-exist primary text-center">Already have an account?</Link>
+                            <Link to="/login" className="already-exist primary text-center text-decoration-none">Already have an account?</Link>
                         </div>
                         <div className="or-sign-in text-center">
                             <h5>or</h5>
