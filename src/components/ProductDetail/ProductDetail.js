@@ -39,7 +39,7 @@ const ProductDetail = () => {
                         <p>{description}</p>
                         <p>Price: ${price}</p>
                         <p>Type: {type}</p>
-                        <Button onClick={handleShop} variant="danger">Shop Now</Button>
+                        <Button onClick={handleShop} variant="danger" className="mb-3">Shop Now</Button>
                     </div>
                 </div>
             </div>

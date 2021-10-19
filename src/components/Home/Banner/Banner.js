@@ -1,9 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css';
-import banner1 from '../../../images/banner/caro1.jpg';
-import banner2 from '../../../images/banner/caro2.jpg';
-import banner3 from '../../../images/banner/caro3.jpg';
 import banner4 from '../../../images/banner/caro7.jpg';
 import banner5 from '../../../images/banner/caro6.jpg';
 import banner6 from '../../../images/banner/caro4.jpg';
