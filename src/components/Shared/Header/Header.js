@@ -33,17 +33,22 @@ const Header = () => {
                             !user && <Nav.Link as={Link} to="/login" className="text-decoration-none">Login</Nav.Link>
                         }
                         {
-                            !user ? <Nav.Link as={Link} to="/signup">
+                            !user && <Nav.Link as={Link} to="/signup">
                                 <Button variant="danger">Sign Up</Button>
                             </Nav.Link>
-                                :
-                                <Navbar.Text>
-                                    Signed in as: <a href="#login">{user?.displayName} </a>
-                                </Navbar.Text>
                         }
 
                         {
-                            user && <Button onClick={logOut} variant="danger">Log Out</Button>
+                            user?.photoURL ? <span>img</span>
+                                :
+                                <span>icon</span>
+                        }
+                        {
+                            user && <span>{user.displayName}</span>
+                        }
+
+                        {
+                            user && <Button onClick={logOut} variant="danger" className="ms-2">Log Out</Button>
                         }
                     </Navbar.Collapse>
                 </Container>

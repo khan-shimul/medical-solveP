@@ -7,7 +7,6 @@ import './Products.css';
 const Products = () => {
     // use products
     const [products] = useProducts();
-    console.log(products)
 
     return (
         <section id="services">

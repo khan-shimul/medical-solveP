@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "rewrites": [ {
+  "source": "**",
+  "destination": "/index.html"
+} ],
+    "default": "medical-solve"
+  }
+}

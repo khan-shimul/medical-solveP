@@ -5,13 +5,37 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const { user, setIsLoading, signInUsingGoogle } = useAuth();
+    const { setError, setEmail, setPassword, setIsLoading, signInUsingGoogle, auth, email, password, signInWithEmailAndPassword } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
     // handle redirect
     const redirect_uri = location.state?.from || "/home";
 
+    // get email
+    const getEmailChange = e => {
+        setEmail(e.target.value);
+    }
+    // get password
+    const getPasswordChange = e => {
+        setPassword(e.target.value)
+    }
+
+    // handle sign in with email and pass
+    const signInUsingEmailPass = e => {
+        setIsLoading(true)
+        e.preventDefault();
+        signInWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                history.push(redirect_uri)
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+            .finally(() => setIsLoading(false))
+    }
+
+    // handle google sign in
     const handleSignIn = () => {
         signInUsingGoogle()
             .then(result => {
@@ -25,12 +49,12 @@ const Login = () => {
         <section className="login-section">
             <div className="d-flex justify-content-center align-items-center">
                 <div className="mt-5">
-                    <Form className="mt-4 login-form w-100">
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form onSubmit={signInUsingEmailPass} className="mt-4 login-form w-100">
+                        <Form.Group onBlur={getEmailChange} className="mb-3" controlId="formBasicEmail">
                             <Form.Control type="email" placeholder="Email" />
                         </Form.Group>
 
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Group onBlur={getPasswordChange} className="mb-3" controlId="formBasicPassword">
                             <Form.Control type="password" placeholder="Password" />
 
                         </Form.Group>
