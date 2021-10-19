@@ -1,0 +1,64 @@
+.about-uss{
+    background-image: url("https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?size=338&ext=jpg"),
+    linear-gradient(rgba(2, 3, 5, 0.5), rgba(0, 0, 0, 0.5));
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    background-blend-mode: overlay;
+}
+
+.about-title{
+    font-size: 50px;
+}
+
+.line-about{
+    width: 50px;
+    height: 2px;
+    background-color: tomato;
+}
+
+.about-sub{
+    margin: 0px 150px;
+    font-size: 15px;
+}
+.modern-health-care{
+    margin: 0px 0 50px 0px;
+}
+.modern-health-care h2{
+    font-size: 40px;
+    color: #00466e;
+    font-weight: 600;
+}
+.modern-health-care p{
+    color: #505050;
+    font-size: 14px;
+}
+
+.about-services{
+    background-color: #f8f8f8;
+}
+
+.about-services h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #1c2a31;
+}
+
+.about-services p{
+    color: #505050;
+    font-size: 15px;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 768px) {
+    .about-sub{
+        margin: 5px 15px;
+    }
+    .modern-health-care{
+        margin: 15px 0px;
+    }
+    
+}

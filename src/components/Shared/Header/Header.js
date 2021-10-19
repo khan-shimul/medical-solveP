@@ -28,6 +28,7 @@ const Header = () => {
                             <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#services">Products</Nav.Link>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
+                            <Nav.Link as={Link} to="/personal-care">Personal Care</Nav.Link>
                         </Nav>
                         {
                             !user && <Nav.Link as={Link} to="/login" className="text-decoration-none">Login</Nav.Link>
