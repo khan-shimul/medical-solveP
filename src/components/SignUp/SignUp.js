@@ -46,6 +46,7 @@ const SignUp = () => {
                 setUserName()
                 history.push(redirect_uri)
             })
+            .then(() => { window.location.reload() })
             .catch(error => {
                 setError(error.message)
             })

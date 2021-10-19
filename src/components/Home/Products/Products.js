@@ -10,7 +10,7 @@ const Products = () => {
     console.log(products)
 
     return (
-        <section>
+        <section id="services">
             {/* Products Intro */}
             <div className="products-intro text-center">
                 <h2>High Demand Products</h2>
