@@ -1,0 +1,19 @@
+.personal-care{
+    background-image: url("https://image.freepik.com/free-photo/multi-ethnic-personnel-treats-patient-hospital-ward_482257-16847.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    background-blend-mode: overlay;
+}
+
+/* responsiveness */
+/* @media only screen and (max-width: 768) {
+    .personal-care{
+        height: 200px;
+    }
+    
+} */

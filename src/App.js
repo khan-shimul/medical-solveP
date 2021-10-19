@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/About/About';
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login';
+import PersonalCare from './components/PersonalCare/PersonalCare';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import ProductDetail from './components/ProductDetail/ProductDetail';
 import Footer from './components/Shared/Footer/Footer';
@@ -24,6 +25,9 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
+            <Route path="/about">
+              <About />
+            </Route>
             <Route path="/login">
               <Login />
             </Route>
@@ -36,9 +40,9 @@ function App() {
             <Route path="/shop-done">
               <ShopDone />
             </Route>
-            <Route path="/about">
-              <About />
-            </Route>
+            <PrivateRoute path="/personal-care">
+              <PersonalCare />
+            </PrivateRoute>
           </Switch>
           <Footer />
         </Router>
