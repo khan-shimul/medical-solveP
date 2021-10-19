@@ -4,6 +4,10 @@ import './Banner.css';
 import banner1 from '../../../images/banner/caro1.jpg';
 import banner2 from '../../../images/banner/caro2.jpg';
 import banner3 from '../../../images/banner/caro3.jpg';
+import banner4 from '../../../images/banner/caro7.jpg';
+import banner5 from '../../../images/banner/caro6.jpg';
+import banner6 from '../../../images/banner/caro4.jpg';
+
 
 const Banner = () => {
     return (
@@ -12,36 +16,36 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={banner1}
+                        src={banner6}
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <Carousel.Caption className="text-dark">
+                        <h3>What is vitamin used for?</h3>
+                        <p>Vitamins are a group of substances that are needed for normal cell function, growth, and development...</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={banner2}
+                        src={banner4}
                         alt="Second slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Ambulatory Blood Pressure</h3>
+                        <p>Ambulatory blood pressure monitoring allows your blood pressure (BP)...</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={banner3}
+                        src={banner5}
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Prescribe Medical Solve</h3>
+                        <p>Doctors prescribe medical solve products!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
