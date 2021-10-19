@@ -32,7 +32,7 @@ function App() {
             <PrivateRoute path="/product/:id">
               <ProductDetail />
             </PrivateRoute>
-            <Route path="/shopdone">
+            <Route path="/shop-done">
               <ShopDone />
             </Route>
           </Switch>

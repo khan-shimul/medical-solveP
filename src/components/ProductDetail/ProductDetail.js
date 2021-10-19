@@ -16,12 +16,13 @@ const ProductDetail = () => {
     const history = useHistory();
     // handle shop click
     const handleShop = () => {
-        history.push('/shopdone')
+        history.push('/shop-done')
     }
 
     return (
-        <div className="container">
-            <h2>Product Details Coming soon for: {id}</h2>
+        <div className="container mt-2">
+            <h2 className="text-success fw-bold">{type}</h2>
+            <div className="line mb-2"></div>
             <div>
                 <div className="row g-4 product-details">
                     <div className="col-12 col-md-6">
