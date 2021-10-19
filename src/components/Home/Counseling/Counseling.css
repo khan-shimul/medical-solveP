@@ -1,0 +1,14 @@
+.counseling-container{
+    background-color: #F7F7F7;
+}
+
+.counseling-container h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(25, 27, 59);
+}
+
+.counseling-container p{
+    color: #646464;
+    font-size: 15px;
+}
