@@ -24,9 +24,16 @@
 }
 
 .btn-regular{
-    background-color: #4AB0D5;
-    color: #ffffff;
-    border: none;
+    background-color: transparent;
+    color: #35325e;
+    border: 1px solid #4AB0D5;
     border-radius: 5px;
-    padding: 7px 17px;
+    padding: 7px 20px;
+    transition: 1s;
+}
+
+.btn-regular:hover{
+    transform: rotate(360deg);
+    background-color: #4AB0D5;
+    color: white;
 }

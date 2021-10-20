@@ -50,16 +50,16 @@ const Header = () => {
                         {
                             !user && <Nav.Link as={NavLink} to="/login" className="text-decoration-none text-white "><span><i className="fas fa-sign-in-alt text-primary login-icon"></i></span> Login</Nav.Link>
                         }
-                        {/* {
+                        {
                             !user && <Nav.Link as={NavLink} to="/signup">
-                                <Button variant="danger">Sign Up</Button>
+                                <button className="btn-sign-up">Sign Up</button>
                             </Nav.Link>
-                        } */}
+                        }
 
                         {
                             user && <div>
                                 <span className="text-white"><i className="far fa-user text-dark"></i> {user?.displayName}</span>
-                                <Button onClick={logOut} variant="danger" className="ms-2">Log Out</Button>
+                                <button onClick={logOut} className="ms-2 btn-sign-up">Log Out</button>
                             </div>
                         }
                     </Navbar.Collapse>

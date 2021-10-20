@@ -9,6 +9,11 @@
     padding: 10px;
     margin: 10px;
     border-radius: 50%;
+    transition: 1.5s;
+}
+
+.bg-icon:hover{
+    transform: rotate(360deg);
 }
 
 .customer-service h5{
