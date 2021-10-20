@@ -81,7 +81,7 @@ const Login = () => {
                         <div className="text-center">
                             {/* <button onClick={handleResetPassword} className="btn btn-secondary btn-sm">Reset Password</button>
                         <br /> */}
-                            <Link to="/signup" className="primary text-center text-decoration-none text-secondary">New to Red Onion? <span className="text-primary">Create Account</span></Link>
+                            <span className="text-secondary">New to MediSolve?</span><Link to="/signup" className="primary text-center text-decoration-none text-secondary"> <span className="text-primary">Create Account</span></Link>
                         </div>
                         <div className="or-sign-in text-center">
                             <h5>or</h5>

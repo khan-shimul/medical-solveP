@@ -41,7 +41,6 @@ const SignUp = () => {
         createUserWithEmailAndPassword(auth, email, password)
             // setIsLoading(true)
             .then(result => {
-                console.log(result.user)
                 setError('')
                 setUserName()
                 history.push(redirect_uri)
@@ -59,6 +58,9 @@ const SignUp = () => {
             .then(result => {
                 console.log(result.user)
                 history.push(redirect_uri)
+            })
+            .catch(error => {
+                setError(error.message)
             })
             .finally(() => setIsLoading(false))
     }
