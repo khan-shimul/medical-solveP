@@ -1,51 +1,32 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 import './Banner.css';
-import banner4 from '../../../images/banner/caro7.jpg';
-import banner5 from '../../../images/banner/caro6.jpg';
-import banner6 from '../../../images/banner/caro4.jpg';
 
 
 const Banner = () => {
+    const history = useHistory()
+
+    const handleClick = () => {
+        history.push('/about')
+    }
+
     return (
-        <div className="banner">
-            <Carousel>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={banner6}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption className="text-dark">
-                        <h3>What is vitamin used for?</h3>
-                        <p>Vitamins are a group of substances that are needed for normal cell function, growth, and development...</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={banner4}
-                        alt="Second slide"
-                    />
+        <div>
+            <div className="home-banner">
+                <div className="container">
+                    <div className="row text-white banner d-flex justify-content-center align-items-center">
+                        <div className="col-12 col-md-7">
+                            <h1>Doctors Prescribe <br /> MediSolve Products</h1>
+                            <p> Medical Solve doctors allows you the potential to impact human life in a way that is truly unique and the job satisfaction you get is unparalleled.</p>
+                            <Button onClick={handleClick} variant="warning">Learn More</Button>
+                        </div>
+                        <div className="col-12 col-md-5">
 
-                    <Carousel.Caption>
-                        <h3>Ambulatory Blood Pressure</h3>
-                        <p>Ambulatory blood pressure monitoring allows your blood pressure (BP)...</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={banner5}
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Prescribe Medical Solve</h3>
-                        <p>Doctors prescribe medical solve products!</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

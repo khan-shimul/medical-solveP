@@ -9,7 +9,7 @@ const Products = () => {
     const [products] = useProducts();
 
     return (
-        <section id="services">
+        <section id="products">
             {/* Products Intro */}
             <div className="products-intro text-center">
                 <h2>High Demand Products</h2>

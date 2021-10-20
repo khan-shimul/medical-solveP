@@ -34,7 +34,7 @@ const Header = () => {
                                 activeStyle={activeStyle}
                                 className="text-white"
                             >Home</Nav.Link>
-                            <Nav.Link as={HashLink} to="/home#services"
+                            <Nav.Link as={HashLink} to="/home#products"
                                 activeStyle={activeStyle}
                                 className="text-white"
                             >Products</Nav.Link>
