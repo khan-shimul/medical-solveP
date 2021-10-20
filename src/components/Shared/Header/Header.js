@@ -48,13 +48,13 @@ const Header = () => {
                             >Personal Care</Nav.Link>
                         </Nav>
                         {
-                            !user && <Nav.Link as={NavLink} to="/login" className="text-decoration-none text-secondary text-white">Login</Nav.Link>
+                            !user && <Nav.Link as={NavLink} to="/login" className="text-decoration-none text-white "><span><i className="fas fa-sign-in-alt text-primary login-icon"></i></span> Login</Nav.Link>
                         }
-                        {
+                        {/* {
                             !user && <Nav.Link as={NavLink} to="/signup">
                                 <Button variant="danger">Sign Up</Button>
                             </Nav.Link>
-                        }
+                        } */}
 
                         {
                             user && <div>

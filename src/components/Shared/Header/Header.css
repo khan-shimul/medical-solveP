@@ -7,3 +7,11 @@
     padding: 5px;
     border-radius: 50%;
 }
+
+.login-icon{
+    background-color: white;
+    /* width: 20px;
+    height: 20px; */
+    padding: 3px;
+    border-radius: 50%;
+}
