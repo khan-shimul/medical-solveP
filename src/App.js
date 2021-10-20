@@ -43,6 +43,9 @@ function App() {
             <PrivateRoute path="/personal-care">
               <PersonalCare />
             </PrivateRoute>
+            <Route path="*">
+
+            </Route>
           </Switch>
           <Footer />
         </Router>

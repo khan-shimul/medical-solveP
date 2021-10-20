@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import patient from '../../images/About/1.jpg';
 import servicesImg from '../../images/About/services.png';
-import { Button, Row } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
 const About = () => {

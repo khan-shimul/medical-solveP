@@ -1,8 +1,7 @@
 import React from 'react';
-import './NotFound.css'
-import { useHistory } from "react-router-dom";
-import { Button } from 'react-bootstrap'
-import errorImg from '../../images/error.png'
+import './NotFound.css';
+import { Button } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 const NotFound = () => {
     let history = useHistory()
@@ -17,7 +16,7 @@ const NotFound = () => {
                     <Button onClick={handleBackHome} className="btn btn-danger">Back to Home</Button>
                 </div>
                 <div className="col-md-6">
-                    <img className="error-img" src={errorImg} alt="" />
+                    <img className="error-img" src="" alt="" />
                 </div>
             </div>
         </div>
