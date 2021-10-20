@@ -6,7 +6,7 @@ import useAuth from '../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
-    const { setError, setEmail, setPassword, setIsLoading, signInUsingGoogle, auth, email, password, signInWithEmailAndPassword } = useAuth();
+    const { error, setError, setEmail, setPassword, setIsLoading, signInUsingGoogle, auth, email, password, signInWithEmailAndPassword } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -28,6 +28,7 @@ const Login = () => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
+                setError('')
                 history.push(redirect_uri)
             })
             .catch(error => {
@@ -41,23 +42,34 @@ const Login = () => {
         signInUsingGoogle()
             .then(result => {
                 console.log(result.user)
+                setError('')
                 history.push(redirect_uri)
+            })
+            .catch(error => {
+                setError(error.message)
             })
             .finally(() => setIsLoading(false))
     }
 
     return (
         <section className="login-section">
+
             <div className="d-flex justify-content-center align-items-center">
+
                 <div className="mt-5">
-                    <Form onSubmit={signInUsingEmailPass} className="mt-4 login-form w-100">
+                    <h2 className="login-title">Please Login</h2>
+                    <Form onSubmit={signInUsingEmailPass} className="login-form w-100">
                         <Form.Group onBlur={getEmailChange} className="mb-3" controlId="formBasicEmail">
-                            <Form.Control type="email" placeholder="Email" />
+                            <Form.Control type="email" placeholder="Email" required />
                         </Form.Group>
 
                         <Form.Group onBlur={getPasswordChange} className="mb-3" controlId="formBasicPassword">
                             <Form.Control type="password" placeholder="Password" />
-
+                            <div className="w-100">
+                                <Form.Text className="text-danger">
+                                    {error}
+                                </Form.Text>
+                            </div>
                         </Form.Group>
                         <Button variant="danger" className="w-100 mb-2" type="submit">
                             Sign In

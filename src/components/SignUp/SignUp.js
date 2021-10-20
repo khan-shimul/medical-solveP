@@ -69,6 +69,7 @@ const SignUp = () => {
                     <div className="mt-5">
 
                         <Form onSubmit={signUpWithEmailPass} className="mt-4 login-form w-100">
+                            <h2 className="login-title">Please Sign Up</h2>
                             <Form.Group onBlur={handleNameChange} className="mb-3">
                                 <Form.Control type="text" placeholder="Name" required />
                             </Form.Group>
